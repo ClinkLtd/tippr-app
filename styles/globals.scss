@@ -1,0 +1,78 @@
+@import './breakpoints.scss';
+
+@font-face {
+  font-family: 'Suisse';
+  src: url('/fonts/SuisseIntl-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Suisse-Bold';
+  src: url('/fonts/SuisseIntl-Bold');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Suisse';
+  src: url('/fonts/SuisseIntl-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Suisse-Bold';
+  src: url('/fonts/SuisseIntl-Bold');
+  font-weight: 600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Suisse';
+}
+
+:root {
+  --primary-bg: #fef8f1;
+  --primary-black: #0f1425;
+  --secondary-black: #727270;
+  --primary-white: #ffffff;
+  --tippr-orange: #f95c00;
+}
+
+button,
+a {
+  cursor: pointer;
+  border: none;
+}
+
+li {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.text_header {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+}
+
+.text_body,
+.text_body_dark {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--secondary-black);
+  line-height: 16px;
+}
+
+.text_body_dark {
+  color: var(--primary-black);
+}
+
+.text_title {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.primary_line_break {
+  border: 1px solid rgba(134, 138, 143, 0.1);
+}
