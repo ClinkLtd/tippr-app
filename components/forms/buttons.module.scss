@@ -1,0 +1,30 @@
+.btn {
+  height: 40px;
+  width: 100%;
+  border-radius: 28px;
+  padding: 0 22px;
+  font-size: 12px;
+  font-weight: 500px;
+  line-height: 16px;
+}
+
+.auth {
+  background: var(--primary-white);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.primary_state {
+  background: var(--tippr-orange);
+  color: var(--primary-white);
+}
+
+.secondary_state {
+  background: rgba(249, 92, 0, 0.1);
+  color: var(--tippr-orange);
+}
+
+.icon_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
