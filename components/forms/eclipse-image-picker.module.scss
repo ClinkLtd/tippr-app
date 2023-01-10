@@ -1,0 +1,19 @@
+.wrapper {
+  width: 72px;
+  height: 72px;
+  background: var(--primary-white);
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.wrapper input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+}
