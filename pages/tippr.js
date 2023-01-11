@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Buttons from 'components/forms/buttons';
 import TipprInput from 'components/forms/tippr-input';
-import styles from 'styles/pages/tippr.module.scss';
-import classNames from 'classnames';
 import EclipseImagePicker from 'components/forms/eclipse-image-picker';
 import Badge from 'components/ui/badge';
 import TipprTextArea from 'components/forms/textarea';
@@ -21,7 +19,7 @@ export default function Tippr() {
       <Head>
         <title>Your Tippr Page</title>
       </Head>
-      <div className={classNames(styles.main, 'main-container')}>
+      <div className={'main-container'}>
         <span className='text-center text_body mb-6'>Your Tippr Page</span>
         <div className='flex flex-col items-center'>
           <EclipseImagePicker />
@@ -42,7 +40,7 @@ export default function Tippr() {
           handleClick={() => {}}
         />
 
-        <div className={styles.payment_options}></div>
+        <div className={'after:'}></div>
 
         <ListCard
           listItems={[]}
@@ -51,9 +49,9 @@ export default function Tippr() {
           handleClick={() => {}}
         />
 
-        <div className={styles.settlement_information}></div>
+        <div className={''}></div>
 
-        <footer className={styles.footer}>
+        <footer>
           <Buttons
             handleClick={() => router.push('/')}
             state='primary'
