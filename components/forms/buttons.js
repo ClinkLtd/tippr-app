@@ -3,10 +3,11 @@ import React from 'react';
 import styles from './buttons.module.scss';
 
 const Buttons = props => {
-  const { state, Icon, text, size = 'sm', handleClick } = props;
+  const { style, square, state, Icon, text, size = 'sm', handleClick } = props;
 
-  const btn_states = classNames({
+  const btn_states = classNames(style, {
     [styles.btn]: true,
+    [styles.square]: square === true,
     [styles.primary_state]: state === 'primary',
     [styles.secondary_state]: state === 'secondary',
     [`${styles.auth} primary_line_break`]: state === 'auth',

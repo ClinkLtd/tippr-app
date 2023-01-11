@@ -4,7 +4,7 @@
   border-radius: 28px;
   padding: 0 22px;
   font-size: 12px;
-  font-weight: 500px;
+  font-weight: 600;
   line-height: 16px;
 }
 
@@ -27,4 +27,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.square {
+  border-radius: 8px;
 }
