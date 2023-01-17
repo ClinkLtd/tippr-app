@@ -24,14 +24,19 @@ export default function LinkBankAccount() {
         <div className='flex flex-col items-end'>
           <span className='text_body'>Share Tippr</span>
           <div className='flex'>
-            <Twitter />
-            <Whatsapp />
+            <button className='mr-2.5'>
+              <Twitter />
+            </button>
+            <button>
+              <Whatsapp />
+            </button>
           </div>
         </div>
       </div>
 
       <div className='mb-20'>
         <Buttons
+          handleClick={() => router.push('/payout-history')}
           style='mb-2.5'
           square={true}
           state='auth'
@@ -39,6 +44,7 @@ export default function LinkBankAccount() {
           Icon={Coins}
         />
         <Buttons
+          handleClick={() => router.push('/tippr')}
           square={true}
           state='auth'
           text='Manage your Tippr page'
