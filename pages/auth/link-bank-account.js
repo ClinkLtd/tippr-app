@@ -5,9 +5,7 @@ import { useRouter } from 'next/router';
 
 import Bank from 'assets/images/bank.svg';
 import Arrow from 'assets/images/arrow-right.svg';
-import User from 'assets/images/user.svg';
-import Calendar from 'assets/images/calendar.svg';
-import Phone from 'assets/images/phone.svg';
+import TipprInput from 'components/forms/tippr-input';
 
 export default function LinkBankAccount() {
   const router = useRouter();
@@ -15,37 +13,20 @@ export default function LinkBankAccount() {
   return (
     <div className={styles.auth}>
       <Bank />
-      <h1 className='text_header mt-2.5'>Verify your Identity</h1>
+      <h1 className='text_header mt-2.5'>Link a Bank Account</h1>
       <p className='text_body mt-1'>
-        Enter your 11-digit Bank Verification Number
+        You need to link a bank account to verify your identity and enable you
+        receive payments on Tippr
       </p>
 
-      <div className='mt-10'>
-        <p className='text_body_dark'>Why we need your BVN</p>
-        <p className='text_body'>
-          We only require your BVN once to confirm your identity, here's what we
-          have access to
-        </p>
-
-        <ul className='mt-4'>
-          <li className={`${styles.list} text_body_dark`}>
-            <User />
-            <span> Your full, legal name</span>
-          </li>
-          <li className={`${styles.list} text_body_dark`}>
-            <Calendar />
-            <span> BVN-linked phone number</span>
-          </li>
-          <li className={`${styles.list} text_body_dark`}>
-            <Phone />
-            <span> Your Date of Birth</span>
-          </li>
-        </ul>
+      <div>
+        <TipprInput />
+        <TipprInput />
       </div>
 
       <div className={styles.footer}>
         <Buttons
-          handleClick={() => router.push('/auth/verify-account')}
+          handleClick={() => router.push('/auth/tippr')}
           state='primary'
           text='Continue'
           Icon={Arrow}
