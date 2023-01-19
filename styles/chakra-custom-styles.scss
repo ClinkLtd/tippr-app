@@ -1,0 +1,10 @@
+.chakra-modal__body {
+  padding: 0 !important;
+}
+
+.chakra-modal__content {
+  display: none;
+  padding: 40px 15px;
+  border-radius: 16px 16px 0 0;
+  background-color: var(--primary-bg) !important;
+}
