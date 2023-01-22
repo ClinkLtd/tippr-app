@@ -1,0 +1,37 @@
+.chakra-modal__body {
+  padding: 0 !important;
+}
+
+.chakra-modal__content {
+  display: none;
+  padding: 40px 15px;
+  border-radius: 16px 16px 0 0;
+  background-color: var(--primary-bg) !important;
+}
+
+// react select styling
+
+.tippr-select-container * {
+  font-family: 'Suisse';
+}
+
+.tippr-select-container .tippr-select__control {
+  min-height: 40px;
+  border-radius: 0px;
+  border: 1px solid rgba(134, 138, 143, 0.1);
+  border-radius: 8px;
+}
+.tippr-select-container .tippr-select__control--menu-is-open {
+  border: 1px solid var(--primary-black);
+  box-shadow: none;
+}
+
+.tippr-select-container .tippr-select__placeholder {
+  font-size: 14px;
+  color: var(--secondary-black);
+}
+
+.tippr-select-container .tippr-select__single-value {
+  font-size: 14px;
+  color: var(--primary-black);
+}
