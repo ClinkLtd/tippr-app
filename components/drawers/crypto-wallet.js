@@ -23,7 +23,7 @@ export function AddCryptoWalletDrawer(props) {
               Add a Crypto Wallet Address
             </span>
 
-            <div className={classNames(styles.crypto_warning, 'mb-')}>
+            <div className={classNames(styles.crypto_warning, 'mb-5')}>
               We currently don’t check if the address you add is valid, we also
               cannot track or record transactions made through a crypto wallet,
               we only provide this option to let tippers know you can receive
