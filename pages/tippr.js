@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import Head from 'next/head';
 import Buttons from 'components/forms/buttons';
 import TipprInput from 'components/forms/tippr-input';
@@ -15,7 +16,7 @@ export default function Tippr() {
   const router = useRouter();
 
   return (
-    <>
+    <Fragment>
       <Head>
         <title>Your Tippr Page</title>
       </Head>
@@ -60,6 +61,6 @@ export default function Tippr() {
           />
         </footer>
       </div>
-    </>
+    </Fragment>
   );
 }

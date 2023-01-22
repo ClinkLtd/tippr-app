@@ -2,7 +2,7 @@ import styles from './tippr-input.module.scss';
 import classNames from 'classnames';
 
 export default function TipprInput(props) {
-  const { name, label, placeholder, handleChange } = props;
+  const { name, label, placeholder, handleChange, isDisabled } = props;
 
   return (
     <div className={styles.input_wrapper}>
@@ -12,6 +12,7 @@ export default function TipprInput(props) {
         </label>
       )}
       <input
+        disabled={isDisabled}
         onChange={handleChange}
         className={styles.input}
         placeholder={placeholder}
