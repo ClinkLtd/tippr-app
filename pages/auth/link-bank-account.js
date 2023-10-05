@@ -11,6 +11,10 @@ import TipprSelect from 'components/forms/tippr-select';
 export default function LinkBankAccount() {
   const router = useRouter();
 
+  const bankOptions = [
+    { label: 'Gtbank', value: 'guarantee' },
+    { label: 'First bank', value: 'first_bank' },
+  ];
   return (
     <Fragment>
       <div className={styles.auth}>
@@ -22,13 +26,17 @@ export default function LinkBankAccount() {
         </p>
 
         <div className='mt-20'>
-          <TipprInput label='Account number' placeholder='0142468037' />
-          <TipprSelect label='Bank' />
+          <TipprInput
+            type='number'
+            label='Account number'
+            placeholder='0142468037'
+          />
+          <TipprSelect options={bankOptions} label='Bank' />
         </div>
 
         <div className={styles.footer}>
           <Buttons
-            handleClick={() => router.push('/auth/tippr')}
+            handleClick={() => router.push('/tippr')}
             state='primary'
             text='Continue'
             Icon={Arrow}

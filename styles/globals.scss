@@ -40,6 +40,24 @@
   --tippr-orange: #f95c00;
 }
 
+.primary-bg {
+  background-color: var(--primary-bg);
+}
+
+.sticky-footer {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.sticky-footer-btn-parent {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 40px;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -47,6 +65,7 @@
   padding: 40px 15px 34px;
   width: 100%;
   height: 100vh;
+  overflow-y: auto;
 }
 
 button,

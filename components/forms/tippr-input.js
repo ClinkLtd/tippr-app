@@ -2,7 +2,14 @@ import styles from './tippr-input.module.scss';
 import classNames from 'classnames';
 
 export default function TipprInput(props) {
-  const { name, label, placeholder, handleChange, isDisabled } = props;
+  const {
+    name,
+    label,
+    placeholder,
+    handleChange,
+    type = 'text',
+    isDisabled,
+  } = props;
 
   return (
     <div className={styles.input_wrapper}>
@@ -17,7 +24,7 @@ export default function TipprInput(props) {
         className={styles.input}
         placeholder={placeholder}
         name={name}
-        type='text'
+        type={type}
       />
     </div>
   );

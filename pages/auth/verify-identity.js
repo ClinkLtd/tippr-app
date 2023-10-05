@@ -37,11 +37,11 @@ export default function VerifyIdentity() {
             <span> Your full, legal name</span>
           </li>
           <li className={`${styles.list} text_body text_dark`}>
-            <Calendar />
+            <Phone />
             <span> BVN-linked phone number</span>
           </li>
           <li className={`${styles.list} text_body text_dark`}>
-            <Phone />
+            <Calendar />
             <span> Your Date of Birth</span>
           </li>
         </ul>

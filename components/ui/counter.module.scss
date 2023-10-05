@@ -1,0 +1,15 @@
+.button_wrapper,
+.button_wrapper:disabled {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.button_wrapper:disabled {
+  background: rgba(249, 92, 0, 0.1);
+  color: var(--tippr-orange);
+}
+
+.button_wrapper {
+  background-color: var(--tippr-orange);
+  color: var(--primary-white);
+}

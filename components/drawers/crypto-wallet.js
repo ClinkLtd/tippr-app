@@ -11,7 +11,7 @@ import TipprInput from 'components/forms/tippr-input';
 import Buttons from 'components/forms/buttons';
 
 export function AddCryptoWalletDrawer(props) {
-  const { isOpen = true, onOpen, onClose } = props;
+  const { isOpen = true, onClose } = props;
 
   return (
     <Fragment>

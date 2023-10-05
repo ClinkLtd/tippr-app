@@ -1,28 +1,21 @@
 import React, { Fragment } from 'react';
-import Arrow from 'assets/images/arrow-right.svg';
-import Select, { components } from 'react-select';
+import Select from 'react-select';
 
 const TipprSelect = props => {
-  const { label } = props;
-
-  const DropdownIndicator = props => {
-    return (
-      <components.DropdownIndicator {...props}>
-        <Arrow />
-      </components.DropdownIndicator>
-    );
-  };
-
-  const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' },
-  ];
+  const {
+    label,
+    options = [
+      { value: 'chocolate', label: 'Chocolate' },
+      { value: 'strawberry', label: 'Strawberry' },
+      { value: 'vanilla', label: 'Vanilla' },
+    ],
+  } = props;
 
   return (
     <Fragment>
+      {label && <label className='text_xs text_dark'>{label}</label>}
       <Select
-        components={{ IndicatorSeparator: () => null, DropdownIndicator }}
+        components={{ IndicatorSeparator: () => null }}
         isFocused={true}
         className='tippr-select-container'
         classNamePrefix='tippr-select'

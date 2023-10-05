@@ -8,10 +8,16 @@ import {
 import styles from './drawers.module.scss';
 import classNames from 'classnames';
 import TipprInput from 'components/forms/tippr-input';
+import TipprSelect from 'components/forms/tippr-select';
 import Buttons from 'components/forms/buttons';
 
 export function UpdateSettlementDrawer(props) {
-  const { isOpen = true, onOpen, onClose } = props;
+  const { isOpen = true, onClose } = props;
+
+  const bankOptions = [
+    { label: 'Gtbank', value: 'guarantee' },
+    { label: 'First bank', value: 'first_bank' },
+  ];
 
   return (
     <Fragment>
@@ -33,9 +39,13 @@ export function UpdateSettlementDrawer(props) {
               label='Account number'
               name='bvn'
               placeholder='0142468037'
+              type='number'
             />
 
             {/* TODO: Add dropdown */}
+            <div className='mb-1'>
+              <TipprSelect options={bankOptions} label='Bank' />
+            </div>
 
             <TipprInput
               isDisabled={true}

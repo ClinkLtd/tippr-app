@@ -5,14 +5,11 @@ import {
   DrawerContent,
   DrawerBody,
 } from '@chakra-ui/react';
-import styles from './drawers.module.scss';
-import classNames from 'classnames';
 import TipprInput from 'components/forms/tippr-input';
 import Buttons from 'components/forms/buttons';
 
 export function AddPersonalLinkDrawer(props) {
-  const { isOpen = true, onOpen, onClose } = props;
-
+  const { isOpen = true, onClose } = props;
   return (
     <Fragment>
       <Drawer placement={'bottom'} onClose={onClose} isOpen={isOpen}>
